@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header(){
     return <>
     <header className="header shop">
@@ -310,10 +312,12 @@ export default function Header(){
                   <div className="nav-inner">
                     <ul className="nav main-menu menu navbar-nav">
                       <li className="active">
-                        <a href="#">Home</a>
+                        <Link to="/" >Home</Link>
+                        {/* <a>Home</a> */}
                       </li>
                       <li>
-                        <a href="#">Product</a>
+                        {/* <Link to="/product">Product</Link> */}
+                        <a>Product</a>
                       </li>
                       <li>
                         <a href="#">Service</a>
