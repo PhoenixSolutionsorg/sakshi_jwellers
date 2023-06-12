@@ -1,4 +1,4 @@
-export default function ShopServices(){
+function ShopServices(){
     return <>
         <section className="shop-services section home">
   <div className="container">
@@ -246,3 +246,4 @@ export default function ShopServices(){
 
     </>
 }
+export default ShopServices;

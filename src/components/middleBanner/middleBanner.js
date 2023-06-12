@@ -1,4 +1,4 @@
-export default function MiddleBanner() {
+function MiddleBanner() {
     return <>
         <section className="midium-banner">
             <div className="container">
@@ -41,3 +41,4 @@ export default function MiddleBanner() {
 
     </>
 }
+export default MiddleBanner;

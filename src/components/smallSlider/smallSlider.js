@@ -1,4 +1,4 @@
-export default function SmallSlider(){
+function SmallSlider(){
     return <>
         <section className="small-banner section">
   <div className="container-fluid">
@@ -49,3 +49,4 @@ export default function SmallSlider(){
 
     </>
 }
+export default SmallSlider;

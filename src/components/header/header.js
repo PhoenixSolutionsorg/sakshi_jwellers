@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-
-export default function Header(){
+function Header(){
     return <>
     <header className="header shop">
   {/* Topbar */}
@@ -376,3 +375,4 @@ export default function Header(){
 
     </>
 }
+export default Header;

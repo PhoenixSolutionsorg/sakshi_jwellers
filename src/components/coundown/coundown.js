@@ -1,4 +1,4 @@
-export default function Coundown(){
+function Coundown(){
     return <>
         <section className="cown-down">
   <div className="section-inner ">
@@ -35,3 +35,4 @@ export default function Coundown(){
 
     </>
 }
+export default Coundown;

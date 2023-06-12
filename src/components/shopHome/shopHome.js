@@ -1,4 +1,4 @@
-export default function ShopHome(){
+function ShopHome(){
     return <>
     
     <section className="shop-home-list section">
@@ -244,3 +244,4 @@ export default function ShopHome(){
 
         </>
 }
+export default ShopHome;

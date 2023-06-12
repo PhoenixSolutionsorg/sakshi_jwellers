@@ -1,5 +1,5 @@
 import "./corousel.css"
-export default function ProductArea(){
+function ProductArea(){
 //   <script>
 // $(document).ready(function(){
 // 	$(".wish-icon i").click(function(){
@@ -567,3 +567,4 @@ export default function ProductArea(){
 
     </>
 }
+export default ProductArea;

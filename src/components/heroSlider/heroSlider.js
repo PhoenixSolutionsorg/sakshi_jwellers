@@ -1,4 +1,4 @@
-export default function HeroSlider(){
+function HeroSlider(){
     return <>
     <section className="hero-slider">
     {/* Single Slider */}
@@ -35,3 +35,4 @@ export default function HeroSlider(){
   
     </>
 }
+export default HeroSlider;

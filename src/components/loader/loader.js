@@ -1,4 +1,4 @@
-export default function Loader(){
+function Loader(){
     return<>
          <div className="preloader">
         <div className="preloader-inner">
@@ -10,3 +10,4 @@ export default function Loader(){
     </div>
     </>
 }
+export default Loader;

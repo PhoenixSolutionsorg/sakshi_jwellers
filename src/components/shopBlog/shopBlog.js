@@ -1,4 +1,4 @@
-export default function ShopBlog(){
+function ShopBlog(){
     return <>
         <section className="shop-blog section">
   <div className="container">
@@ -67,3 +67,4 @@ export default function ShopBlog(){
 
     </>
 }
+export default ShopBlog;

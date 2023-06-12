@@ -1,5 +1,5 @@
 import "./productPage.css";
-export default function ProductPage(){
+function ProductPage(){
 
     return <>
         <div className="container">
@@ -891,6 +891,6 @@ export default function ProductPage(){
   </div>{" "}
 </div>
 
-    </>
-    
+    </>    
 }
+export default ProductPage;

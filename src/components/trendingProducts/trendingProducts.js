@@ -1,5 +1,6 @@
-export default function TrendingProducts(){
+function TrendingProducts(){
     return<>
         
     </>
 }
+export default TrendingProducts;

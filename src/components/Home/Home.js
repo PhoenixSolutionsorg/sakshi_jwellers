@@ -1,4 +1,3 @@
-
 import Coundown from "../coundown/coundown"
 import Footer from "../footer/footer"
 import Header from "../header/header"
