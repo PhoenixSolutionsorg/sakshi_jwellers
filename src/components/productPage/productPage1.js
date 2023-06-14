@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+import Footer from "../footer/footer";
+import WithoutCategory from "../header/withoutCategory";
 import "./productPage.css";
 function ProductPage(){
 
     return <>
+    <WithoutCategory/>
         <div className="container">
   {" "}
   <div
@@ -75,7 +79,7 @@ function ProductPage(){
         </ul>{" "}
       </div>{" "}
     </nav>{" "}
-    <div className="ml-auto mt-3 mr-2">
+    <div className="ml-auto  mr-2 " style={{marginTop: "-50px"}}>
       {" "}
       <nav aria-label="Page navigation example">
         {" "}
@@ -417,8 +421,9 @@ function ProductPage(){
       {" "}
       <div className="row mx-0">
         {" "}
-        <div className="col-lg-4 col-md-6">
+        <div className="col-lg-4 col-md-6 ">
           {" "}
+          <Link to={"/productDescription"}>
           <div className="card d-flex flex-column align-items-center">
             {" "}
             <div className="product-name">Torn Jeans for Men</div>{" "}
@@ -495,10 +500,12 @@ function ProductPage(){
               </div>{" "}
             </div>{" "}
           </div>{" "}
+          </Link>
         </div>{" "}
         <div className="col-lg-4 col-md-6 pt-md-0 pt-3">
           {" "}
-          <div className="card d-flex flex-column align-items-center">
+          <Link to={"/productDescription"}>
+            <div className="card d-flex flex-column align-items-center">
             {" "}
             <div className="product-name">Nike Tshirts for Men</div>{" "}
             <div className="card-img">
@@ -637,9 +644,11 @@ function ProductPage(){
               </div>{" "}
             </div>{" "}
           </div>{" "}
+          </Link>
         </div>{" "}
         <div className="col-lg-4 col-md-6 pt-lg-0 pt-md-4 pt-3">
           {" "}
+          <Link to={"/productDescription"}>
           <div className="card d-flex flex-column align-items-center">
             {" "}
             <div className="product-name text-center">
@@ -691,9 +700,11 @@ function ProductPage(){
               </div>{" "}
             </div>{" "}
           </div>{" "}
+          </Link>
         </div>{" "}
         <div className="col-lg-4 col-md-6 pt-md-4 pt-3">
           {" "}
+          <Link to={"/productDescription"}>
           <div className="card d-flex flex-column align-items-center">
             {" "}
             <div className="product-name text-center">
@@ -761,9 +772,11 @@ function ProductPage(){
               </div>{" "}
             </div>{" "}
           </div>{" "}
+          </Link>
         </div>{" "}
         <div className="col-lg-4 col-md-6 pt-md-4 pt-3">
           {" "}
+          <Link to={"/productDescription"}>
           <div className="card d-flex flex-column align-items-center">
             {" "}
             <div className="product-name text-center">
@@ -831,9 +844,11 @@ function ProductPage(){
               </div>{" "}
             </div>{" "}
           </div>{" "}
+          </Link>
         </div>{" "}
         <div className="col-lg-4 col-md-6 pt-md-4 pt-3">
           {" "}
+          <Link to={"/productDescription"}>
           <div className="card d-flex flex-column align-items-center">
             {" "}
             <div className="product-name text-center">
@@ -885,12 +900,13 @@ function ProductPage(){
               </div>{" "}
             </div>{" "}
           </div>{" "}
+          </Link>
         </div>{" "}
       </div>{" "}
     </div>{" "}
   </div>{" "}
 </div>
-
+<Footer/>
     </>    
 }
 export default ProductPage;

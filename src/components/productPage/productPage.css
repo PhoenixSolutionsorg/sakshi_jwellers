@@ -10,10 +10,6 @@ body {
     background-color: #f4f4f4
 }
 
-.container {
-    margin: 40px auto
-}
-
 #header {
     width: 100%;
     height: 60px;
@@ -27,7 +23,7 @@ body {
 
 button.btn.btn-hide {
     height: inherit;
-    background-color: #ff935d;
+    background-color: #F7941D;
     color: #fff;
     font-size: 0.82rem;
     padding-left: 40px;
@@ -283,7 +279,7 @@ label {
     padding: 10px;
     cursor: pointer;
     transition: .3s all ease-in-out;
-    height: 350px
+    height: auto;
 }
 
 .card:hover {
@@ -486,6 +482,15 @@ input[type=range]::-webkit-slider-thumb {
 .del {
     text-decoration: line-through;
     color: red
+}
+
+.hide1 h3+ul {
+    display: none;
+}
+
+.hide1:hover .hide {
+    display: block;
+    z-index: 12345;
 }
 
 @media(min-width:1199.6px) {

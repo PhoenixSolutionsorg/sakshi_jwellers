@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-function Header(){
+
+export default function WithoutCategory(){
     return <>
-    <header className="header shop">
+          <header className="header shop">
   {/* Topbar */}
   <div className="topbar">
     <div className="container">
@@ -31,7 +32,7 @@ function Header(){
                 <i className="ti-alarm-clock" /> <a href="#">Daily deal</a>
               </li>
               <li>
-                <i className="ti-user" /> <a href="#">My account</a>
+                <i className="ti-user" /> <Link to={"/myAccount"}>My account</Link>
               </li>
               <li>
                 <i className="ti-power-off" />
@@ -108,12 +109,12 @@ function Header(){
               </a>
             </div>
             <div className="sinlge-bar">
-              <Link to={"/signup"} className="single-icon">
+            <Link to={"/signup"} className="single-icon">
                 <i className="fa fa-user-circle-o" aria-hidden="true" />
               </Link>
             </div>
             <div className="sinlge-bar shopping">
-              <Link to={"/cart"} lassName="single-icon">
+              <Link to={"/cart"} className="single-icon">
                 <i className="ti-bag" /> <span className="total-count">2</span>
               </Link>
               {/* Shopping Item */}
@@ -176,12 +177,12 @@ function Header(){
       <div className="cat-nav-head">
         <div className="row">
           <div className="col-lg-3">
-            <div className="all-category">
+            <div className="all-category hide1">
               <h3 className="cat-heading">
                 <i className="fa fa-bars" aria-hidden="true" />
                 CATEGORIES
               </h3>
-              <ul className="main-category">
+              <ul className="main-category hide">
                 <li>
                   <a href="#">
                     New Arrivals{" "}
@@ -372,7 +373,5 @@ function Header(){
   {/*/ End Header Inner */}
 </header>
 
-
     </>
 }
-export default Header;
