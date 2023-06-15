@@ -357,7 +357,7 @@ export default function WithoutCategory(){
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contact Us</a>
+                      <Link to={"/contact"}> Contact Us</Link>
                       </li>
                     </ul>
                   </div>

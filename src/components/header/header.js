@@ -31,7 +31,7 @@ function Header(){
                 <i className="ti-alarm-clock" /> <a href="#">Daily deal</a>
               </li>
               <li>
-                <i className="ti-user" /> <a href="#">My account</a>
+                <i className="ti-user" /> <Link to={"/myAccount"}>My account</Link>
               </li>
               <li>
                 <i className="ti-power-off" />
@@ -356,7 +356,7 @@ function Header(){
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contact Us</a>
+                        <Link to={"/contact"}> Contact Us</Link>
                       </li>
                     </ul>
                   </div>

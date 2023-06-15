@@ -5703,6 +5703,7 @@ Version:1.0
 #myMap {
     height: 500px;
     width: 100%;
+    background-color: gray;
 }
 
 
