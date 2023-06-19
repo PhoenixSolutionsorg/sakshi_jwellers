@@ -82,9 +82,9 @@ function Header(){
             <div className="search-bar">
               <select>
                 <option selected="selected">All Category</option>
-                <option>watch</option>
-                <option>mobile</option>
-                <option>kid’s item</option>
+                <option>Womens Jwellery</option>
+                <option>Mens Jwellery</option>
+                <option>kids Jwellery</option>
               </select>
               <form>
                 <input
@@ -189,43 +189,34 @@ function Header(){
                   </a>
                   <ul className="sub-category">
                     <li>
-                      <a href="#">accessories</a>
+                      <a href="#">Accessories</a>
                     </li>
                     <li>
-                      <a href="#">best selling</a>
+                      <a href="#">Hot selling</a>
                     </li>
                     <li>
-                      <a href="#">top 100 offer</a>
+                      <a href="#">Latest Offer</a>
                     </li>
                     <li>
-                      <a href="#">sunglass</a>
+                      <a href="#">Ear Rings</a>
                     </li>
                     <li>
-                      <a href="#">watch</a>
+                      <a href="#">Bracelets</a>
                     </li>
                     <li>
-                      <a href="#">man’s product</a>
-                    </li>
-                    <li>
-                      <a href="#">ladies</a>
-                    </li>
-                    <li>
-                      <a href="#">westrn dress</a>
-                    </li>
-                    <li>
-                      <a href="#">denim </a>
+                      <a href="#">man's Jwellery</a>
                     </li>
                   </ul>
                 </li>
                 <li className="main-mega">
                   <a href="#">
-                    best selling{" "}
+                    Best Selling{" "}
                     <i className="fa fa-angle-right" aria-hidden="true" />
                   </a>
                   <ul className="mega-menu">
                     <li className="single-menu">
                       <a href="#" className="title-link">
-                        Shop Kid's
+                        Kids Collection
                       </a>
                       <div className="image">
                         <img
@@ -234,15 +225,14 @@ function Header(){
                         />
                       </div>
                       <div className="inner-link">
-                        <a href="#">Kids Toys</a>
-                        <a href="#">Kids Travel Car</a>
-                        <a href="#">Kids Color Shape</a>
-                        <a href="#">Kids Tent</a>
+                        <a href="#">Ear Accessories</a>
+                        <a href="#">Chains</a>
+                        <a href="#">Bracelets</a>
                       </div>
                     </li>
                     <li className="single-menu">
                       <a href="#" className="title-link">
-                        Shop Men's
+                        Men's
                       </a>
                       <div className="image">
                         <img
@@ -251,15 +241,14 @@ function Header(){
                         />
                       </div>
                       <div className="inner-link">
-                        <a href="#">Watch</a>
-                        <a href="#">T-shirt</a>
-                        <a href="#">Hoodies</a>
-                        <a href="#">Formal Pant</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Bracelets</a>
+                        <a href="#">Pandents</a>
                       </div>
                     </li>
                     <li className="single-menu">
                       <a href="#" className="title-link">
-                        Shop Women's
+                        Women's
                       </a>
                       <div className="image">
                         <img
@@ -268,38 +257,31 @@ function Header(){
                         />
                       </div>
                       <div className="inner-link">
-                        <a href="#">Ladies Shirt</a>
-                        <a href="#">Ladies Frog</a>
-                        <a href="#">Ladies Sun Glass</a>
-                        <a href="#">Ladies Watch</a>
+                        <a href="#">Ladies Chains</a>
+                        <a href="#">Ladies Accessories</a>
+                        <a href="#"> Necklace </a>
                       </div>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#">accessories</a>
-                </li>
-                <li>
-                  <a href="#">top 100 offer</a>
-                </li>
-                <li>
-                  <a href="#">sunglass</a>
-                </li>
-                <li>
-                  <a href="#">watch</a>
-                </li>
-                <li>
-                  <a href="#">man’s product</a>
-                </li>
-                <li>
-                  <a href="#">ladies</a>
-                </li>
-                <li>
-                  <a href="#">westrn dress</a>
-                </li>
-                <li>
-                  <a href="#">denim </a>
-                </li>
+                      <a href="#">Accessories</a>
+                    </li>
+                    <li>
+                      <a href="#">Hot selling</a>
+                    </li>
+                    <li>
+                      <a href="#">Latest Offer</a>
+                    </li>
+                    <li>
+                      <a href="#">Ear Rings</a>
+                    </li>
+                    <li>
+                      <a href="#">Bracelets</a>
+                    </li>
+                    <li>
+                      <a href="#">man's Jwellery</a>
+                    </li>
               </ul>
             </div>
           </div>

@@ -30,7 +30,7 @@ function ProductArea(){
         <div className="carousel-inner">
           <div className="item carousel-item active">
             <div className="row">
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -43,7 +43,7 @@ function ProductArea(){
                     />
                   </div>
                   <div className="thumb-content">
-                    <h4>Apple iPad</h4>
+                    <h4>Silver Necklace</h4>
                     <div className="star-rating">
                       <ul className="list-inline">
                         <li className="list-inline-item">
@@ -64,7 +64,7 @@ function ProductArea(){
                       </ul>
                     </div>
                     <p className="item-price">
-                      <strike>$400.00</strike> <b>$369.00</b>
+                      <strike>2000</strike> <b>1500</b>
                     </p>
                     <a href="#" className="btn btn-primary">
                       Add to Cart
@@ -72,7 +72,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -85,7 +85,7 @@ function ProductArea(){
                     />
                   </div>
                   <div className="thumb-content">
-                    <h4>Sony Headphone</h4>
+                    <h4>Silver Pendant</h4>
                     <div className="star-rating">
                       <ul className="list-inline">
                         <li className="list-inline-item">
@@ -106,7 +106,7 @@ function ProductArea(){
                       </ul>
                     </div>
                     <p className="item-price">
-                      <strike>$25.00</strike> <b>$23.99</b>
+                      <strike>700</strike> <b>450</b>
                     </p>
                     <a href="#" className="btn btn-primary">
                       Add to Cart
@@ -114,7 +114,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -127,7 +127,7 @@ function ProductArea(){
                     />
                   </div>
                   <div className="thumb-content">
-                    <h4>Macbook Air</h4>
+                    <h4>Mens Bracelets</h4>
                     <div className="star-rating">
                       <ul className="list-inline">
                         <li className="list-inline-item">
@@ -148,7 +148,7 @@ function ProductArea(){
                       </ul>
                     </div>
                     <p className="item-price">
-                      <strike>$899.00</strike> <b>$649.00</b>
+                      <strike>500</strike> <b>350</b>
                     </p>
                     <a href="#" className="btn btn-primary">
                       Add to Cart
@@ -156,7 +156,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -169,7 +169,7 @@ function ProductArea(){
                     />
                   </div>
                   <div className="thumb-content">
-                    <h4>Nikon DSLR</h4>
+                    <h4>Leg Accessories</h4>
                     <div className="star-rating">
                       <ul className="list-inline">
                         <li className="list-inline-item">
@@ -202,7 +202,7 @@ function ProductArea(){
           </div>
           <div className="item carousel-item">
             <div className="row">
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -215,7 +215,7 @@ function ProductArea(){
                     />
                   </div>
                   <div className="thumb-content">
-                    <h4>Sony Play Station</h4>
+                    <h4>Deligate Rings</h4>
                     <p className="item-price">
                       <strike>$289.00</strike> <span>$269.00</span>
                     </p>
@@ -244,7 +244,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -257,7 +257,7 @@ function ProductArea(){
                     />
                   </div>
                   <div className="thumb-content">
-                    <h4>Macbook Pro</h4>
+                    <h4>Mens Ear Rings</h4>
                     <p className="item-price">
                       <strike>$1099.00</strike> <span>$869.00</span>
                     </p>
@@ -286,7 +286,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -299,7 +299,7 @@ function ProductArea(){
                     />
                   </div>
                   <div className="thumb-content">
-                    <h4>Bose Speaker</h4>
+                    <h4>Chains</h4>
                     <p className="item-price">
                       <strike>$109.00</strike> <span>$99.00</span>
                     </p>
@@ -328,7 +328,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -341,7 +341,7 @@ function ProductArea(){
                     />
                   </div>
                   <div className="thumb-content">
-                    <h4>Samsung Galaxy S8</h4>
+                    <h4>Artifacts</h4>
                     <p className="item-price">
                       <strike>$599.00</strike> <span>$569.00</span>
                     </p>
@@ -374,7 +374,7 @@ function ProductArea(){
           </div>
           <div className="item carousel-item">
             <div className="row">
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -416,7 +416,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -458,7 +458,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
@@ -500,7 +500,7 @@ function ProductArea(){
                   </div>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-3 col-sm-6">
                 <div className="thumb-wrapper">
                   <span className="wish-icon">
                     <i className="fa fa-heart-o" />
