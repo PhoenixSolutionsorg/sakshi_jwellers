@@ -250,3 +250,10 @@ export default function Cart(){
 
     </>
 }
+
+// --------------------other cart pages---------------------------
+
+
+// https://bbbootstrap.com/snippets/bootstrap-ecommerce-shopping-cart-item-summary-44021562
+
+// https://bbbootstrap.com/snippets/tailwind-css-shopping-cart-template-84488512

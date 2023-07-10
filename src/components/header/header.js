@@ -300,9 +300,9 @@ function Header(){
                         <Link to="/product">Product</Link>
                         {/* <a>Product</a> */}
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="#">Service</a>
-                      </li>
+                      </li> */}
                       <li>
                         <a href="#">
                           Shop
@@ -310,11 +310,11 @@ function Header(){
                           <span className="new">New</span>
                         </a>
                         <ul className="dropdown">
-                          <li>
+                          {/* <li>
                             <a href="shop-grid.html">Shop Grid</a>
-                          </li>
+                          </li> */}
                           <li>
-                            <a href="cart.html">Cart</a>
+                              <Link to={"/cart"}>Cart</Link>
                           </li>
                           <li>
                             <a href="checkout.html">Checkout</a>

@@ -1,243 +1,208 @@
-import React from 'react'
-import './account.css'
+import Footer from "../footer/footer";
+import WithoutCategory from "../header/withoutCategory";
+import "./account.css";
 
-export default function myAccount() {
-  return (
-    <>
-  <div className="container mt-4 bg-light p-4">
-    <h1 className='text-center text-secondary mb-2'>Silver Jwelles</h1>
-    <div className="row">
-      <div className="col-lg-3 my-lg-0 my-md-1">
-        <div id="sidebar" className="bg-purple">
-          <div className="h4 text-white">Account</div>
-          <ul>
-            <li className="active">
-              <a
-                href="#"
-                className="text-decoration-none d-flex align-items-start"
-              >
-                <div className="fas fa-box pt-2 me-3" />
-                <div className="d-flex flex-column">
-                  <div className="link">My Account</div>
-                  <div className="link-desc">
-                    View &amp; Manage orders and returns
-                  </div>
+export default function MyAccount() {
+  return <>
+    <WithoutCategory/>
+      <link
+        href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        rel="stylesheet"
+        id="bootstrap-css"
+      />
+      {/*---- Include the above in your HEAD tag --------*/}
+      <div className="container emp-profile mt-5 mb-5">
+        <form method="post">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="profile-img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+                  alt=""
+                />
+                <div className="file btn btn-lg btn-primary w-75 m-auto">
+                  Change Photo
+                  <input type="file" name="file"  className="changefile"/>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-decoration-none d-flex align-items-start"
-              >
-                <div className="fas fa-box-open pt-2 me-3"/>
-                <div className="d-flex flex-column">
-                  <div className="link">My Orders</div>
-                  <div className="link-desc">
-                    View &amp; Manage orders and returns
-                  </div>
-                </div>
-              </a>
-            </li>
-            {/* <li>
-              <a
-                href="#"
-                className="text-decoration-none d-flex align-items-start"
-              >
-                <div className="far fa-address-book pt-2 me-3" />
-                <div className="d-flex flex-column">
-                  <div className="link">Address Book</div>
-                  <div className="link-desc">View &amp; Manage Addresses</div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-decoration-none d-flex align-items-start"
-              >
-                <div className="far fa-user pt-2 me-3" />
-                <div className="d-flex flex-column">
-                  <div className="link">My Profile</div>
-                  <div className="link-desc">
-                    Change your profile details &amp; password
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-decoration-none d-flex align-items-start"
-              >
-                <div className="fas fa-headset pt-2 me-3" />
-                <div className="d-flex flex-column">
-                  <div className="link">Help &amp; Support</div>
-                  <div className="link-desc">
-                    Contact Us for help and support
-                  </div>
-                </div>
-              </a>
-            </li> */}
-          </ul>
-        </div>
-      </div>
-      <div className="col-lg-9 my-lg-0 my-1">
-        <div id="main-content" className="bg-white border">
-          <div className="d-flex flex-column">
-            <div className="h5">Hello Jhon,</div>
-            <div>Logged in as: someone@gmail.com</div>
-          </div>
-          <div className="d-flex my-4 flex-wrap">
-            <div className="box me-4 my-1 bg-light">
-              <img
-                src="https://www.freepnglogos.com/uploads/box-png/cardboard-box-brown-vector-graphic-pixabay-2.png"
-                alt=""
-              />
-              <div className="d-flex align-items-center mt-2">
-                <div className="tag">Orders placed</div>
-                <div className="ms-auto number">10</div>
               </div>
             </div>
-            <div className="box me-4 my-1 bg-light">
-              <img
-                src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-campus-recreation-university-nebraska-lincoln-30.png"
-                alt=""
-              />
-              <div className="d-flex align-items-center mt-2">
-                <div className="tag">Items in Cart</div>
-                <div className="ms-auto number">10</div>
+            <div className="col-md-6">
+              <div className="profile-head">
+                <h5>Kshiti Ghelani</h5>
+                <h6>Web Developer and Designer</h6>
+                <p className="proile-rating">
+                  RANKINGS : <span>8/10</span>
+                </p>
+                <ul className="nav nav-tabs" id="myTab" role="tablist">
+                  <li className="nav-item">
+                    <a
+                      className="nav-link active"
+                      id="home-tab"
+                      data-toggle="tab"
+                      href="#home"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="nav-link"
+                      id="profile-tab"
+                      data-toggle="tab"
+                      href="#profile"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                    >
+                      Timeline
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div className="box me-4 my-1 bg-light">
-              <img
-                src="https://www.freepnglogos.com/uploads/love-png/love-png-heart-symbol-wikipedia-11.png"
-                alt=""
+            <div className="col-md-2">
+              <input
+                type="submit"
+                className="profile-edit-btn"
+                name="btnAddMore"
+                defaultValue="Edit Profile"
               />
-              <div className="d-flex align-items-center mt-2">
-                <div className="tag">Wishlist</div>
-                <div className="ms-auto number">10</div>
-              </div>
             </div>
           </div>
-          <div className="text-uppercase">My recent orders</div>
-          <div className="order my-3 bg-light">
-            <div className="row">
-              <div className="col-lg-4">
-                <div className="d-flex flex-column justify-content-between order-summary">
-                  <div className="d-flex align-items-center">
-                    <div className="text-uppercase">Order #fur10001</div>
-                    <div className="blue-label ms-auto text-uppercase">
-                      paid
+          <div className="row">
+            <div className="col-md-4">
+              <div className="profile-work">
+                <p>WORK LINK</p>
+                <a href="">Website Link</a>
+                <br />
+                <a href="">Bootsnipp Profile</a>
+                <br />
+                <a href="">Bootply Profile</a>
+                <p>SKILLS</p>
+                <a href="">Web Designer</a>
+                <br />
+                <a href="">Web Developer</a>
+                <br />
+                <a href="">WordPress</a>
+                <br />
+                <a href="">WooCommerce</a>
+                <br />
+                <a href="">PHP, .Net</a>
+                <br />
+              </div>
+            </div>
+            <div className="col-md-8">
+              <div className="tab-content profile-tab" id="myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>User Id</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>Kshiti123</p>
                     </div>
                   </div>
-                  <div className="fs-8">Products #03</div>
-                  <div className="fs-8">22 August, 2020 | 12:05 PM</div>
-                  <div className="rating d-flex align-items-center pt-1">
-                    <img
-                      src="https://www.freepnglogos.com/uploads/like-png/like-png-hand-thumb-sign-vector-graphic-pixabay-39.png"
-                      alt=""
-                    />
-                    <span className="px-2">Rating:</span>
-                    <span className="fas fa-star" />
-                    <span className="fas fa-star" />
-                    <span className="fas fa-star" />
-                    <span className="fas fa-star" />
-                    <span className="far fa-star" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-8">
-                <div className="d-sm-flex align-items-sm-start justify-content-sm-between">
-                  <div className="status">Status : Delivered</div>
-                  <div className="btn btn-primary text-uppercase">
-                    order info
-                  </div>
-                </div>
-                <div className="progressbar-track">
-                  <ul className="progressbar">
-                    <li id="step-1" className="text-muted green">
-                      <span className="fas fa-gift" />
-                    </li>
-                    <li id="step-2" className="text-muted green">
-                      <span className="fas fa-check" />
-                    </li>
-                    <li id="step-3" className="text-muted green">
-                      <span className="fas fa-box" />
-                    </li>
-                    <li id="step-4" className="text-muted green">
-                      <span className="fas fa-truck" />
-                    </li>
-                    <li id="step-5" className="text-muted green">
-                      <span className="fas fa-box-open" />
-                    </li>
-                  </ul>
-                  <div id="tracker" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="order my-3 bg-light">
-            <div className="row">
-              <div className="col-lg-4">
-                <div className="d-flex flex-column justify-content-between order-summary">
-                  <div className="d-flex align-items-center">
-                    <div className="text-uppercase">Order #fur10001</div>
-                    <div className="green-label ms-auto text-uppercase">
-                      cod
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>Name</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>Kshiti Ghelani</p>
                     </div>
                   </div>
-                  <div className="fs-8">Products #03</div>
-                  <div className="fs-8">22 August, 2020 | 12:05 PM</div>
-                  <div className="rating d-flex align-items-center pt-1">
-                    <img
-                      src="https://www.freepnglogos.com/uploads/like-png/like-png-hand-thumb-sign-vector-graphic-pixabay-39.png"
-                      alt=""
-                    />
-                    <span className="px-2">Rating:</span>
-                    <span className="fas fa-star" />
-                    <span className="fas fa-star" />
-                    <span className="fas fa-star" />
-                    <span className="fas fa-star" />
-                    <span className="far fa-star" />
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>Email</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>kshitighelani@gmail.com</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>Phone</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>123 456 7890</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>Profession</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>Web Developer and Designer</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-8">
-                <div className="d-sm-flex align-items-sm-start justify-content-sm-between">
-                  <div className="status">Status : Delivered</div>
-                  <div className="btn btn-primary text-uppercase">
-                    order info
+                <div
+                  className="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>Experience</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>Expert</p>
+                    </div>
                   </div>
-                </div>
-                <div className="progressbar-track">
-                  <ul className="progressbar">
-                    <li id="step-1" className="text-muted green">
-                      <span className="fas fa-gift" />
-                    </li>
-                    <li id="step-2" className="text-muted">
-                      <span className="fas fa-check" />
-                    </li>
-                    <li id="step-3" className="text-muted">
-                      <span className="fas fa-box" />
-                    </li>
-                    <li id="step-4" className="text-muted">
-                      <span className="fas fa-truck" />
-                    </li>
-                    <li id="step-5" className="text-muted">
-                      <span className="fas fa-box-open" />
-                    </li>
-                  </ul>
-                  <div id="tracker" />
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>Hourly Rate</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>10$/hr</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>Total Projects</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>230</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>English Level</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>Expert</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <label>Availability</label>
+                    </div>
+                    <div className="col-md-6">
+                      <p>6 months</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <label>Your Bio</label>
+                      <br />
+                      <p>Your detail description</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
-    </div>
-  </div>
-</>
-
-  )
+      <Footer/>
+    </>
+    
 }
