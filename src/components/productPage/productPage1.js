@@ -79,7 +79,7 @@ function ProductPage(){
         </ul>{" "}
       </div>{" "}
     </nav>{" "}
-    <div className="ml-auto  mr-2 " style={{marginTop: "-50px"}}>
+    <div className="ml-auto  mr-2 ">
       {" "}
       <nav aria-label="Page navigation example">
         {" "}

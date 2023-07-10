@@ -147,6 +147,7 @@ carousel-indicators li,
 
 .carousel-indicators li {
     background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
 }
 
 .carousel-indicators li.active {
