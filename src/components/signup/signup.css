@@ -20,10 +20,11 @@
 
 .login-snip {
     width: 100%;
+    border-radius: 20px;
     height: 100%;
     position: absolute;
     padding: 90px 70px 50px 70px;
-    background: rgba(35, 33, 33, 0.77);
+    background: rgba(255, 255, 255, 0.77);
 }
 
 .login-snip .login,
@@ -61,7 +62,7 @@
 
 .login-snip .sign-in:checked+.tab,
 .login-snip .sign-up:checked+.tab {
-    color: #fff;
+    color: black;
     border-color: #1161ee;
 }
 
@@ -80,13 +81,16 @@
 .login-space .group .input,
 .login-space .group .button {
     width: 100%;
-    color: #fff;
+    /* color: #fff; */
     display: block;
+}
+.login-space .group .button{
+    color: white;
 }
 
 .login-space .group .input,
 .login-space .group .button {
-    border: none;
+    /* border: none; */
     padding: 15px 20px;
     border-radius: 25px;
     background: rgba(255, 255, 255, .1);
@@ -98,7 +102,7 @@
 }
 
 .login-space .group .label {
-    color: white;
+    /* color: white; */
     font-size: 12px;
 }
 
@@ -139,7 +143,7 @@
 }
 
 .login-space .group .check:checked+label {
-    color: #fff;
+    /* color: #fff; */
 }
 
 .login-space .group .check:checked+label .icon {
@@ -200,5 +204,5 @@ a {
 }
 
 ::placeholder {
-    color: white;
+    /* color: white; */
 }
