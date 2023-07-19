@@ -25,7 +25,7 @@ function ProductPage(){
     >
       {" "}
       <span className="fas fa-angle-left" id="filter-angle" />{" "}
-      <span id="btn-txt">Hide filters</span>{" "}
+      <span id="btn-txt">Show filters</span>{" "}
     </button>{" "}
     <nav className="navbar navbar-expand-lg navbar-light pl-lg-0 pl-auto">
       {" "}
@@ -434,7 +434,7 @@ function ProductPage(){
                 alt=""
               />{" "}
             </div>{" "}
-            <div className="card-body pt-5">
+            <div className="card-body w-100 pt-5 bg-primary">
               {" "}
               <div className="text-muted text-center mt-auto">
                 Available Colors

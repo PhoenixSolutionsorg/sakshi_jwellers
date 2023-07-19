@@ -282,8 +282,12 @@ label {
     height: auto;
 }
 
+a {
+    text-decoration: none!important;
+}
+
 .card:hover {
-    box-shadow: 2px 2px 15px #fd9a6ce5;
+    /* box-shadow: 2px 2px 15px #fd9a6ce5; */
     transform: scale(1.02)
 }
 
@@ -491,6 +495,7 @@ input[type=range]::-webkit-slider-thumb {
 .hide1:hover .hide {
     display: block;
     z-index: 12345;
+    transition: ease !important;
 }
 
 @media(min-width:1199.6px) {

@@ -48,11 +48,12 @@ function Header(){
   <div className="middle-inner">
     <div className="container">
       <div className="row">
-        <div className="col-lg-2 col-md-2 col-12">
+        <div className="col-lg-3 col-md-3 col-12">
           {/* Logo */}
           <div className="logo">
             <a href="index.html">
-              <img src="images/logo.png" alt="logo" />
+              {/* <img src="images/logo.png" alt="logo" /> */}
+              <h3>Jewel Carnival</h3>
             </a>
           </div>
           {/*/ End Logo */}
@@ -77,15 +78,15 @@ function Header(){
           {/*/ End Search Form */}
           <div className="mobile-nav" />
         </div>
-        <div className="col-lg-8 col-md-7 col-12">
+        <div className="col-lg-7 col-md-6 col-12">
           <div className="search-bar-top">
             <div className="search-bar">
-              <select>
+              {/* <select>
                 <option selected="selected">All Category</option>
                 <option>Womens Jwellery</option>
                 <option>Mens Jwellery</option>
                 <option>kids Jwellery</option>
-              </select>
+              </select> */}
               <form>
                 <input
                   name="search"
