@@ -434,69 +434,18 @@ function ProductPage(){
                 alt=""
               />{" "}
             </div>{" "}
-            <div className="card-body w-100 pt-5 bg-primary">
+            <div className="card-body w-100 ">
               {" "}
               <div className="text-muted text-center mt-auto">
                 Available Colors
               </div>{" "}
               <div className="d-flex align-items-center justify-content-center colors my-2">
                 {" "}
-                <div
-                  className="btn-group"
-                  data-toggle="buttons"
-                  data-tooltip="tooltip"
-                  data-placement="right"
-                  title="choose color"
-                >
-                  {" "}
-                  <label className="btn btn-red form-check-label">
-                    {" "}
-                    <input
-                      className="form-check-input"
-                      type="radio"
-                      autoComplete="off"
-                    />{" "}
-                  </label>{" "}
-                  <label className="btn btn-blue form-check-label active">
-                    {" "}
-                    <input
-                      className="form-check-input"
-                      type="radio"
-                      autoComplete="off"
-                    />{" "}
-                  </label>{" "}
-                  <label className="btn btn-green form-check-label">
-                    {" "}
-                    <input
-                      className="form-check-input"
-                      type="radio"
-                      autoComplete="off"
-                    />{" "}
-                  </label>{" "}
-                  <label className="btn btn-orange form-check-label">
-                    {" "}
-                    <input
-                      className="form-check-input"
-                      type="radio"
-                      autoComplete="off"
-                    />{" "}
-                  </label>{" "}
-                  <label className="btn btn-pink form-check-label">
-                    {" "}
-                    <input
-                      className="form-check-input"
-                      type="radio"
-                      autoComplete="off"
-                    />{" "}
-                  </label>{" "}
-                </div>{" "}
+                <p>Price <del style={{color: "red"}}>2000</del> 1500</p>
               </div>{" "}
               <div className="d-flex align-items-center price">
-                {" "}
-                <div className="del mr-2">
-                  <span className="text-dark">5500 uah</span>
-                </div>{" "}
-                <div className="font-weight-bold">4500 uah</div>{" "}
+                  <button className="btn btn-primary mr-2">Add To Cart</button>
+                  <button className="btn btn-primary ml-2">Description</button>
               </div>{" "}
             </div>{" "}
           </div>{" "}

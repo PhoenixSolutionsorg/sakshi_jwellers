@@ -4326,7 +4326,7 @@ tbody.collapse.show {
     width: 100%;
     border-radius: calc(.25rem - 1px);
     height: 180px !important;
-    background-color: #004085;
+    /* background-color: #004085; */
 }
 
 .card-img-top {

@@ -279,7 +279,7 @@ label {
     padding: 10px;
     cursor: pointer;
     transition: .3s all ease-in-out;
-    height: auto;
+    height: 350px;
 }
 
 a {
@@ -508,7 +508,7 @@ input[type=range]::-webkit-slider-thumb {
     #filterbar {
         width: 28%
     }
-    .card {
+    .card1 {
         height: 350px
     }
     .price {
