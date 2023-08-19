@@ -7,12 +7,12 @@ import routesMap from "../../../routeControl/userRouteMap";
 export default function routes(){
     return [
         {
-            path : routesMap.SIGNIN.path,
-            name : "Patient Sign In",
+            path : routesMap.HOME.path,
+            name : "",
             common : true,
             private : false,
             withAuth : false,
-            key : routesMap.SIGNIN.path,
+            key : routesMap.HOME.path,
             element : <SignInPage />
         }
     ]

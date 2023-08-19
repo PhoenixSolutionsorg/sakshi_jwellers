@@ -1,25 +1,37 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Home from './components/Home/Home';
-import ProductPage from './components/productPage/productPage1';
-import Cart from './components/cart/cart';
-import Signup from './components/signup/signup';
-import ProductDescription from './components/productDescription/productDiscription';
-import MyAccount from './components/myAccount/myAccount';
-import Contact from './components/contact/contact';
+import Home from './components/home/home';
+import { Suspense } from 'react';
+import { useRoutes, useLocation } from 'react-router-dom';
+import { baseRoutes } from './helpers/baseRoutes';
+import { routes } from './route';
+import { ToastContainer } from 'react-toastify';
+function RouteLayout({ path }) {
+  const element = useRoutes(path);
+  return element;
+}
 function App() {
-  return <> 
-  <Routes>
-   <Route path='/' element={ <Home/>}/>
-   <Route path='/product' element={ <ProductPage/>}/>
-   <Route path='/cart' element={ <Cart/>}/>
-   <Route path='/signup' element={<Signup/>}/>
-   <Route path='/productDescription' element={<ProductDescription/>}/>
-   <Route path='/myAccount' element={<MyAccount/>}/>
-  <Route path="/contact" element={<Contact/>}/>
-  </Routes>
-  {/* <Home/> */}
-  </>
+  const location = useLocation();
+  let path = location.pathname.search(baseRoutes.adminBaseRoutes.replace("/", "admin")) >= 0 ? "admin" : "user";
+  return (
+    <>
+      <ToastContainer className="toast-position"
+        position="top-center"
+        autoClose={2500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <Suspense fallback={
+        path === "user" ? <div>User Loader...</div> : <div>Admin Loader...</div>
+      }>
+        <RouteLayout path={routes()} />
+      </Suspense>
+    </>
+  );
 }
 
 export default App;

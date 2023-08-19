@@ -18,3 +18,4 @@ export {default as SignUp} from './signup/signup';
 export {default as SmallSlider} from './smallSlider/smallSlider';
 export {default as TopBar} from './topbar/topBar';
 export {default as TrendingProducts} from './trendingProducts/trendingProducts';
+export {default as UserHomePage} from './Home/Home';
