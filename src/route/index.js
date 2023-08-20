@@ -1,31 +1,31 @@
 import { UserRoutes } from "./user";
-import { AdminRoutes } from "./admin";
+// import { AdminRoutes } from "./admin";
 import { Outlet } from "react-router-dom";
-import AdminLayout from "../layout/admin";
+// import AdminLayout from "../layout/admin";
 export const routes = () => {
   return [
     {
       element: <Outlet />,
       children: [...UserRoutes()],
     },
-    {
-      element: <AdminLayout />,
-      children: [...AdminRoutes()],
-    },
+    // {
+    //   element: <AdminLayout />,
+    //   children: [...AdminRoutes()],
+    // },
   ];
 };
 export const routeList = () => {
   let routeArr = [
     ...UserRoutes()[0].children,
-    ...AdminRoutes()[0].children,
-    ...AdminRoutes()[1].children,
+    // ...AdminRoutes()[0].children,
+    // ...AdminRoutes()[1].children,
   ];
   return routeArr;
 };
 export const moduleRouteList = () => {
   let moduleRouteArr = {
     user: [...UserRoutes()[0].children],
-    admin: [...AdminRoutes()[0].children, ...AdminRoutes()[1].children],
+    // admin: [...AdminRoutes()[0].children, ...AdminRoutes()[1].children],
   };
   return moduleRouteArr;
 };

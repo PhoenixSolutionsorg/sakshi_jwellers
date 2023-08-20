@@ -1,10 +1,10 @@
 import './App.css';
-import Home from './components/home/home';
 import { Suspense } from 'react';
 import { useRoutes, useLocation } from 'react-router-dom';
 import { baseRoutes } from './helpers/baseRoutes';
 import { routes } from './route';
 import { ToastContainer } from 'react-toastify';
+import { Loader } from './components';
 function RouteLayout({ path }) {
   const element = useRoutes(path);
   return element;
@@ -26,7 +26,11 @@ function App() {
         pauseOnHover
       />
       <Suspense fallback={
-        path === "user" ? <div>User Loader...</div> : <div>Admin Loader...</div>
+        path === "user" ?
+          <>
+            <Loader/>
+          </>
+          : <div>Admin Loader...</div>
       }>
         <RouteLayout path={routes()} />
       </Suspense>

@@ -1,19 +1,25 @@
-import SignInPage from "../../../pages/User/signin";
-import SignUpPage from "../../../pages/User/signup";
-import ForgotPassword from "../../../pages/User/ForgotPassword/index.page";
-import ResetPassword from "../../../pages/User/ResetPassword/index.page";
 import routesMap from "../../../routeControl/userRouteMap";
+import { SignIn } from "../../../pages";
 
 export default function routes(){
     return [
         {
-            path : routesMap.HOME.path,
+            path : routesMap.SIGNIN.path,
             name : "",
             common : true,
             private : false,
             withAuth : false,
-            key : routesMap.HOME.path,
-            element : <SignInPage />
+            key : routesMap.SIGNIN.path,
+            element : <SignIn />
+        },
+        {
+            path : routesMap.SIGNUP.path,
+            name : "",
+            common : true,
+            private : false,
+            withAuth : false,
+            key : routesMap.SIGNUP.path,
+            element : <SignIn />
         }
     ]
 }

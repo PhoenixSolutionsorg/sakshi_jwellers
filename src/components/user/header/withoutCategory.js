@@ -70,7 +70,7 @@ export default function WithoutCategory(){
               </a>
             </div>
             <div className="sinlge-bar">
-            <Link to={"/signup"} className="single-icon">
+            <Link to='profile' className="single-icon">
                 <i className="fa fa-user-circle-o" aria-hidden="true" />
               </Link>
             </div>
