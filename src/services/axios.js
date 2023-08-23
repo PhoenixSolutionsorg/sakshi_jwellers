@@ -2,10 +2,11 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 const APIrequest = async ({ method, url, baseURL, queryParams, bodyData, }) => {
   try {
-    const token = useSelector(state => state?.user?.userData?.token);
+    console.log("3333");
+    // const token = useSelector(state => state?.user?.userData?.token);
     const axiosConfig = {
       method: method || "GET",
-      baseURL: "http://localhost:5000",
+      baseURL: "http://localhost:5050/api/",
       headers: {
         "Content-Type": "application/json",
         "X-Frame-Options": "sameorigin",
@@ -35,12 +36,12 @@ const APIrequest = async ({ method, url, baseURL, queryParams, bodyData, }) => {
 
       axiosConfig.params = queryParamsPayload;
     }
-    if (!token) {
-      axiosConfig.headers = {
-        ...axiosConfig.headers,
-        authorization: `RahulSir@dfsf@${token}`
-      }
-    }
+    // if (!token) {
+    //   axiosConfig.headers = {
+    //     ...axiosConfig.headers,
+    //     authorization: `Foundation@dfsf@${token}`
+    //   }
+    // }
 
     if (bodyData) {
       const bodyPayload = {};
@@ -61,7 +62,6 @@ const APIrequest = async ({ method, url, baseURL, queryParams, bodyData, }) => {
     const res = await axios(axiosConfig);
     return res.data;
   } catch (error) {
-
     return error.response;
   }
 };
