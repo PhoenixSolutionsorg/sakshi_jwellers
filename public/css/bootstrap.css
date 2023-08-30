@@ -38,8 +38,8 @@
 
 @media print {
     *,
-    ::after,
-    ::before {
+     ::after,
+     ::before {
         text-shadow: none!important;
         box-shadow: none!important
     }
@@ -4324,7 +4324,9 @@ tbody.collapse.show {
 
 .card-img {
     width: 100%;
-    border-radius: calc(.25rem - 1px)
+    border-radius: calc(.25rem - 1px);
+    height: 180px !important;
+    /* background-color: #004085; */
 }
 
 .card-img-top {
