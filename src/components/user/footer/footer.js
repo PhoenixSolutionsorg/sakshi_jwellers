@@ -1,6 +1,6 @@
 function Footer() {
   return <>
-    <footer className="footer">
+    <footer className="footer p-3">
       {/* Footer Top */}
       <div className="footer-top section">
         <div className="container">
@@ -10,7 +10,8 @@ function Footer() {
               <div className="single-footer about">
                 <div className="logo">
                   <a href="index.html">
-                    <img src="images/logo2.png" alt="#" />
+                    {/* <img src="images/logo2.png" alt="#" /> */}
+                    <h1 className="text-light">JEWEL CARNIVAL</h1>
                   </a>
                 </div>
                 <p className="text">

@@ -6,7 +6,7 @@ function SignIn() {
     <>
       <WithoutCategory/>
       <ProductPage/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }
