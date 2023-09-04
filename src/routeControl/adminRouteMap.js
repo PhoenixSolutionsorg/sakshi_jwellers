@@ -1,6 +1,6 @@
-// import adminRoute from "./admin";
+import adminRoute from "./admin";
 
-// const adminRouteMap = {
-//   ...adminRoute,
-// };
-// export default adminRouteMap;
+const adminRouteMap = {
+  ...adminRoute,
+};
+export default adminRouteMap;
